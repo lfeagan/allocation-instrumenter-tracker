@@ -27,6 +27,7 @@ public class MemoryAllocationTrackingExample {
         MemoryAllocationWorkload workload = new MemoryAllocationWorkload();
         workload.allocateIntArrays((short) 24);
         workload.allocateStrings((short) 16);
+
         // print results
         tracker.printReport(new PrintWriter(System.out));
     }
